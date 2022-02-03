@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: software.amazon.awssdk:lambda:2.17.102">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../.m2/repository/software/amazon/awssdk/lambda/2.17.102/lambda-2.17.102.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../.m2/repository/software/amazon/awssdk/lambda/2.17.102/lambda-2.17.102-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../.m2/repository/software/amazon/awssdk/lambda/2.17.102/lambda-2.17.102-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
