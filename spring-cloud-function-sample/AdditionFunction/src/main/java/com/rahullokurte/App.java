@@ -9,13 +9,38 @@ import java.util.function.Function;
  */
 
 @Component
-public class App implements Function<InputNumber, String> {
+public class App implements Function<InputNumber, Response> {
 
 
     @Override
-    public String apply(InputNumber inputNumber) {
+    public Response apply(InputNumber inputNumber) {
         int add = inputNumber.getNumber1() + inputNumber.getNumber2();
-        return "The total of `" + inputNumber.getNumber1() + "` and `" + inputNumber.getNumber2() + "` is `" + add + "`";
+        String response = new String("The total of `" + inputNumber.getNumber1() + "` and `" + inputNumber.getNumber2() + "` is `" + add + "`");
+        Response responseObject = new Response();
+        responseObject.setBody(response);
+        responseObject.setStatusCode(200);
+        return responseObject;
+    }
+}
+
+class Response {
+    private int statusCode;
+    private Object body;
+
+    public int getStatusCode() {
+        return statusCode;
+    }
+
+    public void setStatusCode(int statusCode) {
+        this.statusCode = statusCode;
+    }
+
+    public Object getBody() {
+        return body;
+    }
+
+    public void setBody(Object body) {
+        this.body = body;
     }
 }
 
