@@ -44,7 +44,7 @@ deploy:
     - export AWS_SESSION_TOKEN="session_token"
   script:
     - sam package --template-file template.yaml --output-template-file packaged.yaml --s3-bucket "$bucket_name"
-    - sam deploy --template-file packaged.yaml --stack-name $stack_name --s3-bucket "$bucket_name"
+    - sam deploy --template-file packaged.yaml --stack-name $stack_name --s3-bucket "$bucket_name" --capabilities CAPABILITY_IAM
   artifacts:
     name: "out"
     paths:
