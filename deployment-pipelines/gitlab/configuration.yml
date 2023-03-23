@@ -1,0 +1,6 @@
+variables:
+  aws_account_id: "1235678086"
+  sam_role: "sam-execute-Role"
+  session_name: "sample"
+  bucket_name: "sample-bucket"
+  stack_name: "sample-stack"
